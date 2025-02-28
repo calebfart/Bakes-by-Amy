@@ -1,0 +1,180 @@
+body{
+    font-family: sans-serif;
+    background: linear-gradient(rgb(104, 192, 222),rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    background-attachment: fixed;
+}
+footer{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(255, 184, 226),rgb(105, 228, 228));
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border-radius: 5px;
+}
+
+
+.logo{
+    font-size: 2em;
+    display: flex;
+    color: rgb(45, 155, 155);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(225, 109, 177);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 40px;
+
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+.cta-button{
+    text-decoration:none;
+    color: rgb(254, 97, 123);
+    font-weight: bold;
+    
+}
+.testimonial-slider {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.testimonial-slider blockquote {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.2em;
+    width: 300px;
+}
+
+.testimonial-slider blockquote cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Style for the About Section */
+.about-section {
+    background-color: #90eeff; /* Light, soft background color */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 40px 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Heading Style */
+.about-section h2 {
+    font-family: sans-serif; /* Elegant serif font */
+    color: #d84f88; /* A warm, inviting color */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Adds sophistication */
+    letter-spacing: 1px;
+}
+
+/* Paragraph Style */
+.about-section p {
+    font-family: sans-serif; /* Simple and clean font for readability */
+    color: #2023e9; /* Dark gray text color */
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center; /* Center the paragraph */
+    max-width: 800px; /* Limit the width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background behind text for contrast */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow around the text box */
+    margin-top: 30px;
+    transition: all 1s ease; /* Smooth transition */
+
+}
+
+/* Hover Effect for Text */
+.about-section p:hover {
+    color: #e55f99; /* Change text color on hover */
+}
+.services-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+  
+  /* Service Card Styling */
+  .service-card {
+    display: inline-block;
+    background-color: rgb(252, 252, 252);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 280px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 300%;
+    border-bottom: 4px solid #ff80ab;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #ff80ab;
+    padding: 10px 0;
+  }
+  
+  .service-card p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
